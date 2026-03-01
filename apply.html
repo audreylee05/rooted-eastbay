@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RootED — How to Apply</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo"><a href="index.html">Root<span>ED</span></a></div>
+  <ul class="nav-links">
+    <li><a href="screener.html">Find Resources</a></li>
+    <li><a href="resources.html">Directory</a></li>
+    <li><a href="apply.html">How to Apply</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <a class="nav-cta" href="screener.html">Get Help Now</a>
+</nav>
+<section id="apply">
+  <div class="section-header">
+    <div class="section-label">⚡ Core Feature #3</div>
+    <h2>How to Apply — Step by Step</h2>
+    <p style="color:rgba(255,255,255,0.5)">62% of surveyed users had abandoned an application mid-process. These guides fix that.</p>
+  </div>
+
+  <div class="apply-tabs">
+    <button class="apply-tab active" onclick="switchApply('calfresh', this)">CalFresh / EBT</button>
+    <button class="apply-tab" onclick="switchApply('medical', this)">Medi-Cal</button>
+    <button class="apply-tab" onclick="switchApply('clinic', this)">Free Clinic</button>
+    <button class="apply-tab" onclick="switchApply('shelter', this)">Emergency Shelter</button>
+  </div>
+
+  <div class="apply-content active" id="apply-calfresh">
+    <div class="apply-info">
+      <h3>CalFresh (EBT Food Stamps)</h3>
+      <p>CalFresh provides monthly funds loaded onto an EBT card you can use like a debit card at grocery stores, farmers markets, and some restaurants. A family of 4 can receive up to $973/month.</p>
+      <div class="apply-docs">
+        <h4>What You'll Need</h4>
+        <ul>
+          <li>Photo ID (driver's license, passport, or ID card)</li>
+          <li>Proof of address (utility bill, mail)</li>
+          <li>Proof of income (pay stubs, employer letter)</li>
+          <li>Social Security numbers for applicants</li>
+          <li>Immigration documents if applicable</li>
+        </ul>
+      </div>
+    </div>
+    <div class="apply-steps">
+      <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Check your eligibility</h4><p>A family of 3 earning under ~$2,311/month gross may qualify. Undocumented immigrants may qualify for children in the household.</p></div></div>
+      <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Apply online at BenefitsCal.gov</h4><p>Takes about 20 minutes. You can save and return. Available in Spanish, Vietnamese, Chinese, and more.</p></div></div>
+      <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Complete your phone interview</h4><p>You'll receive a call within 3-5 days to verify your information. Have your documents nearby.</p></div></div>
+      <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Receive your EBT card</h4><p>If approved, your card arrives in 7-10 business days. Funds are added monthly.</p></div></div>
+      <a href="https://benefitscal.com" class="apply-cta" target="_blank">Apply at BenefitsCal.gov →</a>
+    </div>
+  </div>
+
+  <div class="apply-content" id="apply-medical">
+    <div class="apply-info">
+      <h3>Medi-Cal (Free Health Insurance)</h3>
+      <p>Medi-Cal is California's free or low-cost health insurance for low-income individuals and families. It covers doctor visits, hospital care, mental health, dental, prescriptions, and more.</p>
+      <div class="apply-docs">
+        <h4>What You'll Need</h4>
+        <ul>
+          <li>Proof of California residency</li>
+          <li>Proof of income or statement of no income</li>
+          <li>Social Security number (if you have one)</li>
+          <li>Immigration documents if applicable</li>
+          <li>Birth certificates for children</li>
+        </ul>
+      </div>
+    </div>
+    <div class="apply-steps">
+      <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Apply at BenefitsCal.gov</h4><p>You can apply online, by phone (1-800-300-1506), by mail, or in person at your county Social Services office.</p></div></div>
+      <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Wait for determination</h4><p>Alameda County typically processes applications within 45 days. Urgent medical need can be processed in 3 days.</p></div></div>
+      <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Choose a health plan</h4><p>You'll receive a letter to choose a Medi-Cal managed care plan. If you don't choose, one will be assigned.</p></div></div>
+      <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Get your Medi-Cal card</h4><p>Use it at any Medi-Cal provider. Find providers at Medi-Cal.ca.gov.</p></div></div>
+      <a href="https://benefitscal.com" class="apply-cta" target="_blank">Apply at BenefitsCal.gov →</a>
+    </div>
+  </div>
+
+  <div class="apply-content" id="apply-clinic">
+    <div class="apply-info">
+      <h3>Free & Low-Cost Clinics</h3>
+      <p>East Bay community health clinics provide care regardless of insurance status or ability to pay. Services include primary care, mental health, dental, women's health, and vaccinations.</p>
+      <div class="apply-docs">
+        <h4>Top East Bay Clinics</h4>
+        <ul>
+          <li>La Clínica de La Raza — Oakland, Fruitvale, Hayward</li>
+          <li>Roots Community Health Center — East Oakland</li>
+          <li>LifeLong Medical Care — Berkeley, Richmond</li>
+          <li>Axis Community Health — Pleasanton, Livermore</li>
+          <li>Alameda County Public Health — free vaccines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="apply-steps">
+      <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Find your nearest clinic</h4><p>Use the filter above to find a clinic by city. Most accept walk-ins for urgent care; appointments for primary care.</p></div></div>
+      <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Call ahead</h4><p>Ask about sliding-scale fees, language support, and what services are available same-day.</p></div></div>
+      <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Bring ID if you have it</h4><p>Most clinics do not require insurance or ID. Bring whatever you have — they'll work with you.</p></div></div>
+      <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Ask about additional benefits</h4><p>Clinic staff can often help you apply for Medi-Cal or CalFresh on the spot.</p></div></div>
+      <a href="resources.html" class="apply-cta">Find a Clinic Near You →</a>
+    </div>
+  </div>
+
+  <div class="apply-content" id="apply-shelter">
+    <div class="apply-info">
+      <h3>Emergency Shelter Tonight</h3>
+      <p>If you or someone you know needs shelter tonight, these East Bay resources provide immediate help. You do not need to be a citizen or have ID to access emergency shelter.</p>
+      <div class="apply-docs">
+        <h4>Key Contacts</h4>
+        <ul>
+          <li>Alameda County 211 — call or text 211</li>
+          <li>BOSS (Building Opportunities for Self-Sufficiency) Oakland</li>
+          <li>Building Futures — Hayward, San Leandro</li>
+          <li>Henry Robinson Center — Oakland men's shelter</li>
+          <li>Covenant House — youth ages 18-24, Oakland</li>
+        </ul>
+      </div>
+    </div>
+    <div class="apply-steps">
+      <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Call 211 first</h4><p>Alameda County 211 is a free, 24/7 hotline that will assess your situation and find the nearest available bed tonight.</p></div></div>
+      <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>For families with children</h4><p>Call Alameda County Family Emergency Shelter at (510) 259-7285. Families are prioritized.</p></div></div>
+      <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Ask about rapid rehousing</h4><p>If you're in a shelter, ask about Alameda County's rapid rehousing program which can help you transition to permanent housing.</p></div></div>
+      <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Rental assistance</h4><p>Alameda County HOME program and state programs may cover back rent to prevent future evictions.</p></div></div>
+      <a href="tel:211" class="apply-cta">Call 211 Now →</a>
+    </div>
+  </div>
+</section><footer>
+  <div>
+    <div class="footer-logo">Root<span>ED</span></div>
+    <p style="margin-top:0.5rem">Built for the East Bay. By the East Bay.</p>
+  </div>
+  <div class="footer-links">
+    <a href="faq.html">FAQ</a>
+    <a href="suggest-resource.html">Suggest a Resource</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+<script src="app.js"></script>
+<script src="ai-chat.js"></script>
+</body>
+</html>

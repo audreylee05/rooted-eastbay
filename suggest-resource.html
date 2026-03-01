@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RootED — Suggest a Resource</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo"><a href="index.html">Root<span>ED</span></a></div>
+  <ul class="nav-links">
+    <li><a href="screener.html">Find Resources</a></li>
+    <li><a href="resources.html">Directory</a></li>
+    <li><a href="apply.html">How to Apply</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <a class="nav-cta" href="screener.html">Get Help Now</a>
+</nav>
+
+<main class="page-shell">
+  <div class="section-header">
+    <div class="section-label">Community</div>
+    <h2>Suggest a Resource</h2>
+    <p>Know a food pantry, clinic, legal program, or housing service we should add? Share it below and we will review it.</p>
+  </div>
+
+  <section class="page-card">
+    <form id="suggestForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="resourceName">Resource name *</label>
+          <input id="resourceName" name="resourceName" type="text" required>
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">Select one</option>
+            <option>Food</option>
+            <option>Healthcare</option>
+            <option>Housing</option>
+            <option>Financial Aid</option>
+            <option>Kids & Family</option>
+            <option>Legal Aid</option>
+            <option>Jobs</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="city">City or area *</label>
+          <input id="city" name="city" type="text" required>
+        </div>
+        <div class="field">
+          <label for="contact">Website or phone</label>
+          <input id="contact" name="contact" type="text" placeholder="https://... or (510) ...">
+        </div>
+        <div class="field field-full">
+          <label for="language">Languages supported</label>
+          <input id="language" name="language" type="text" placeholder="English, Spanish, Vietnamese...">
+        </div>
+        <div class="field field-full">
+          <label for="details">Details and eligibility notes *</label>
+          <textarea id="details" name="details" required placeholder="Hours, who qualifies, required documents, walk-in info, etc."></textarea>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn-primary" type="submit">Submit Suggestion</button>
+        <span class="form-note">Submitting opens your email app with a pre-filled message.</span>
+      </div>
+      <p id="suggestMsg" class="submit-msg" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">Root<span>ED</span></div>
+    <p style="margin-top:0.5rem">Built for the East Bay. By the East Bay.</p>
+  </div>
+  <div class="footer-links">
+    <a href="faq.html">FAQ</a>
+    <a href="suggest-resource.html">Suggest a Resource</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="ai-chat.js"></script>
+</body>
+</html>

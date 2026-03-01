@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RootED — Find Resources</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo"><a href="index.html">Root<span>ED</span></a></div>
+  <ul class="nav-links">
+    <li><a href="screener.html">Find Resources</a></li>
+    <li><a href="resources.html">Directory</a></li>
+    <li><a href="apply.html">How to Apply</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <a class="nav-cta" href="screener.html">Get Help Now</a>
+</nav>
+<section id="screener">
+  <div class="screener-inner">
+    <div class="section-label">⚡ Core Feature #1</div>
+    <h2>Find what you qualify for</h2>
+    <p>Answer 3 quick questions and we'll show you exactly which East Bay resources match your situation — no jargon, no runaround.</p>
+
+    <div class="screener-steps active" id="screenerForm">
+      <div class="screener-q">
+        <h3>1. What's your biggest need right now?</h3>
+        <div class="screener-options">
+          <button class="screener-opt" onclick="selectOpt(this, 'need', 'food')">🥗 Food & Groceries</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'need', 'health')">🏥 Healthcare</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'need', 'housing')">🏠 Housing / Shelter</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'need', 'money')">💰 Financial Aid</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'need', 'kids')">👧 Children & Family</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'need', 'all')">📋 Show me everything</button>
+        </div>
+      </div>
+      <div class="screener-q">
+        <h3>2. Where are you located?</h3>
+        <div class="screener-options">
+          <button class="screener-opt" onclick="selectOpt(this, 'city', 'oakland')">Oakland</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'city', 'fremont')">Fremont</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'city', 'hayward')">Hayward</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'city', 'richmond')">Richmond</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'city', 'other')">Other East Bay</button>
+        </div>
+      </div>
+      <div class="screener-q">
+        <h3>3. Who are you looking for help for?</h3>
+        <div class="screener-options">
+          <button class="screener-opt" onclick="selectOpt(this, 'who', 'family')">👨‍👩‍👧 Family with children</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'who', 'adult')">👤 Single adult</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'who', 'senior')">👴 Senior (65+)</button>
+          <button class="screener-opt" onclick="selectOpt(this, 'who', 'pregnant')">🤰 Pregnant / new parent</button>
+        </div>
+      </div>
+      <button class="screener-btn" id="showResourcesBtn" onclick="showResults()" disabled>Show My Resources →</button>
+      <p class="screener-hint" id="screenerHint">Answer all 3 questions to see your matched resources.</p>
+    </div>
+
+    <div class="screener-results" id="screenerResults">
+      <h3 class="result-headline">Here's what we found for you</h3>
+      <p class="result-sub" id="resultSub">Based on your answers, these East Bay resources are available to you right now.</p>
+      <div class="result-cards" id="resultCards"></div>
+      <button class="reset-btn" onclick="resetScreener()">← Start Over</button>
+    </div>
+  </div>
+</section><footer>
+  <div>
+    <div class="footer-logo">Root<span>ED</span></div>
+    <p style="margin-top:0.5rem">Built for the East Bay. By the East Bay.</p>
+  </div>
+  <div class="footer-links">
+    <a href="faq.html">FAQ</a>
+    <a href="suggest-resource.html">Suggest a Resource</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+<script src="app.js"></script>
+<script src="ai-chat.js"></script>
+</body>
+</html>

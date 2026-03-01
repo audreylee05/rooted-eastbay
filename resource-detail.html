@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RootED — Resource Details</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="nav-logo"><a href="index.html">Root<span>ED</span></a></div>
+  <ul class="nav-links">
+    <li><a href="screener.html">Find Resources</a></li>
+    <li><a href="resources.html">Directory</a></li>
+    <li><a href="apply.html">How to Apply</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <a class="nav-cta" href="screener.html">Get Help Now</a>
+</nav>
+
+<main class="page-shell">
+  <a class="btn-secondary back-link" href="resources.html">← Back to Directory</a>
+  <div class="section-header">
+    <div class="section-label">Resource Profile</div>
+    <h2 id="detailName">Loading resource...</h2>
+    <p id="detailCategory"></p>
+  </div>
+
+  <section class="page-card">
+    <p id="detailDescription"></p>
+
+    <div class="resource-detail-grid">
+      <div>
+        <div class="detail-line">
+          <h4>Exact location</h4>
+          <p id="detailLocation"></p>
+        </div>
+        <div class="detail-line">
+          <h4>Phone number</h4>
+          <a id="detailPhone" href="#"></a>
+        </div>
+        <div class="detail-line">
+          <h4>Email</h4>
+          <a id="detailEmail" href="#"></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="detail-line">
+          <h4>Themes</h4>
+          <div class="rc-tags" id="detailTagList"></div>
+        </div>
+        <div class="detail-actions">
+          <a class="btn-primary" id="detailApply" href="#" target="_blank" rel="noopener noreferrer">Access Resource</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">Root<span>ED</span></div>
+    <p style="margin-top:0.5rem">Built for the East Bay. By the East Bay.</p>
+  </div>
+  <div class="footer-links">
+    <a href="faq.html">FAQ</a>
+    <a href="suggest-resource.html">Suggest a Resource</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="ai-chat.js"></script>
+</body>
+</html>
